@@ -15,13 +15,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  /* Panggil gambar JPG yang baru saja dimasukkan */
-  background-image: url('/assets/grid-pattern.svg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1; /* Sesuaikan angka ini (0.1 - 1.0) agar tidak terlalu terang */
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
   pointer-events: none;
   z-index: 0;
 }
@@ -188,20 +188,20 @@
 
 /* Top Left */
 .deco-top-left {
-  top: -20px;
+  top: -60px;
   left: 40px;
 }
 .deco-top-left .bar-v {
   width: 15px;
   height: 80px;
 }
-.deco-top-left .blue { background-color: #2C3E50; height: 60px; margin-top: 20px;} /* Biru tua pendek */
-.deco-top-left .teal { background-color: #48C9B0; } /* Teal panjang */
+.deco-top-left .blue { background-color: #2C3E50; height: 80px; margin-top: -28px;} /* Biru tua pendek */
+.deco-top-left .teal { background-color: #48C9B0; height: 30px; margin-top: -28px;} /* Teal panjang */
 
 /* Bottom Left */
 .deco-bottom-left {
   bottom: 40px;
-  margin-bottom: -20px;
+  margin-bottom: -150px;
   left: 20px;
   align-items: flex-end;
 }

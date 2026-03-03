@@ -14,7 +14,7 @@ function App() {
     // Jalankan animasi keluar dulu
     setIsAnimating(true)
     
-    // Tunggu animasi selesai, lalu切换halaman
+    // Tunggu animasi selesai
     setTimeout(() => {
       setShowPage(newPage)
       setPage(newPage)
